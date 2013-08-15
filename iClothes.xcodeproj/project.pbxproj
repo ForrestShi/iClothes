@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0532B60B6D204EFC8B11AF75 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3995AFE0C74C0B9718B223 /* libPods.a */; };
 		CD500C5E17BCB4EC004951B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD500C5D17BCB4EC004951B8 /* UIKit.framework */; };
 		CD500C6017BCB4EC004951B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD500C5F17BCB4EC004951B8 /* Foundation.framework */; };
 		CD500C6217BCB4EC004951B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD500C6117BCB4EC004951B8 /* CoreGraphics.framework */; };
@@ -16,17 +17,21 @@
 		CD500C7017BCB4EC004951B8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C6F17BCB4EC004951B8 /* Default.png */; };
 		CD500C7217BCB4EC004951B8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C7117BCB4EC004951B8 /* Default@2x.png */; };
 		CD500C7417BCB4EC004951B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C7317BCB4EC004951B8 /* Default-568h@2x.png */; };
-		CD500C7717BCB4EC004951B8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C7617BCB4EC004951B8 /* FirstViewController.m */; };
+		CD500C7717BCB4EC004951B8 /* BarcodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C7617BCB4EC004951B8 /* BarcodeScanViewController.m */; };
 		CD500C7917BCB4EC004951B8 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C7817BCB4EC004951B8 /* first.png */; };
 		CD500C7B17BCB4EC004951B8 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C7A17BCB4EC004951B8 /* first@2x.png */; };
-		CD500C7E17BCB4EC004951B8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C7D17BCB4EC004951B8 /* SecondViewController.m */; };
+		CD500C7E17BCB4EC004951B8 /* MyClothesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C7D17BCB4EC004951B8 /* MyClothesViewController.m */; };
 		CD500C8017BCB4EC004951B8 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C7F17BCB4EC004951B8 /* second.png */; };
 		CD500C8217BCB4EC004951B8 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8117BCB4EC004951B8 /* second@2x.png */; };
-		CD500C8517BCB4EC004951B8 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8317BCB4EC004951B8 /* FirstViewController.xib */; };
-		CD500C8817BCB4EC004951B8 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8617BCB4EC004951B8 /* SecondViewController.xib */; };
+		CD500C8517BCB4EC004951B8 /* BarcodeScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8317BCB4EC004951B8 /* BarcodeScanViewController.xib */; };
+		CD500C8817BCB4EC004951B8 /* MyClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8617BCB4EC004951B8 /* MyClothesViewController.xib */; };
+		CD500C9117BCBE94004951B8 /* EmbedReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C8F17BCBE94004951B8 /* EmbedReaderViewController.m */; };
+		CD500C9217BCBE94004951B8 /* EmbedReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C9017BCBE94004951B8 /* EmbedReaderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1987C097B046AC8DCE361C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8A3995AFE0C74C0B9718B223 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD500C5A17BCB4EC004951B8 /* iClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD500C5D17BCB4EC004951B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CD500C5F17BCB4EC004951B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,16 +45,19 @@
 		CD500C6F17BCB4EC004951B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CD500C7117BCB4EC004951B8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CD500C7317BCB4EC004951B8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CD500C7517BCB4EC004951B8 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CD500C7617BCB4EC004951B8 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CD500C7517BCB4EC004951B8 /* BarcodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeScanViewController.h; sourceTree = "<group>"; };
+		CD500C7617BCB4EC004951B8 /* BarcodeScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanViewController.m; sourceTree = "<group>"; };
 		CD500C7817BCB4EC004951B8 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CD500C7A17BCB4EC004951B8 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		CD500C7C17BCB4EC004951B8 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CD500C7D17BCB4EC004951B8 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CD500C7C17BCB4EC004951B8 /* MyClothesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClothesViewController.h; sourceTree = "<group>"; };
+		CD500C7D17BCB4EC004951B8 /* MyClothesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClothesViewController.m; sourceTree = "<group>"; };
 		CD500C7F17BCB4EC004951B8 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CD500C8117BCB4EC004951B8 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		CD500C8417BCB4EC004951B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		CD500C8717BCB4EC004951B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		CD500C8417BCB4EC004951B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BarcodeScanViewController.xib; sourceTree = "<group>"; };
+		CD500C8717BCB4EC004951B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyClothesViewController.xib; sourceTree = "<group>"; };
+		CD500C8E17BCBE94004951B8 /* EmbedReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbedReaderViewController.h; sourceTree = "<group>"; };
+		CD500C8F17BCBE94004951B8 /* EmbedReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbedReaderViewController.m; sourceTree = "<group>"; };
+		CD500C9017BCBE94004951B8 /* EmbedReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmbedReaderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 				CD500C5E17BCB4EC004951B8 /* UIKit.framework in Frameworks */,
 				CD500C6017BCB4EC004951B8 /* Foundation.framework in Frameworks */,
 				CD500C6217BCB4EC004951B8 /* CoreGraphics.framework in Frameworks */,
+				0532B60B6D204EFC8B11AF75 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 				CD500C6317BCB4EC004951B8 /* iClothes */,
 				CD500C5C17BCB4EC004951B8 /* Frameworks */,
 				CD500C5B17BCB4EC004951B8 /* Products */,
+				2F1987C097B046AC8DCE361C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +99,7 @@
 				CD500C5D17BCB4EC004951B8 /* UIKit.framework */,
 				CD500C5F17BCB4EC004951B8 /* Foundation.framework */,
 				CD500C6117BCB4EC004951B8 /* CoreGraphics.framework */,
+				8A3995AFE0C74C0B9718B223 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,16 +109,19 @@
 			children = (
 				CD500C6C17BCB4EC004951B8 /* AppDelegate.h */,
 				CD500C6D17BCB4EC004951B8 /* AppDelegate.m */,
-				CD500C7517BCB4EC004951B8 /* FirstViewController.h */,
-				CD500C7617BCB4EC004951B8 /* FirstViewController.m */,
+				CD500C8E17BCBE94004951B8 /* EmbedReaderViewController.h */,
+				CD500C8F17BCBE94004951B8 /* EmbedReaderViewController.m */,
+				CD500C7517BCB4EC004951B8 /* BarcodeScanViewController.h */,
+				CD500C7617BCB4EC004951B8 /* BarcodeScanViewController.m */,
 				CD500C7817BCB4EC004951B8 /* first.png */,
 				CD500C7A17BCB4EC004951B8 /* first@2x.png */,
-				CD500C7C17BCB4EC004951B8 /* SecondViewController.h */,
-				CD500C7D17BCB4EC004951B8 /* SecondViewController.m */,
+				CD500C7C17BCB4EC004951B8 /* MyClothesViewController.h */,
+				CD500C7D17BCB4EC004951B8 /* MyClothesViewController.m */,
 				CD500C7F17BCB4EC004951B8 /* second.png */,
 				CD500C8117BCB4EC004951B8 /* second@2x.png */,
-				CD500C8317BCB4EC004951B8 /* FirstViewController.xib */,
-				CD500C8617BCB4EC004951B8 /* SecondViewController.xib */,
+				CD500C9017BCBE94004951B8 /* EmbedReaderViewController.xib */,
+				CD500C8317BCB4EC004951B8 /* BarcodeScanViewController.xib */,
+				CD500C8617BCB4EC004951B8 /* MyClothesViewController.xib */,
 				CD500C6417BCB4EC004951B8 /* Supporting Files */,
 			);
 			path = iClothes;
@@ -134,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD500C8B17BCB4EC004951B8 /* Build configuration list for PBXNativeTarget "iClothes" */;
 			buildPhases = (
+				BCB8EDEB49684DFAA7055836 /* Check Pods Manifest.lock */,
 				CD500C5617BCB4EC004951B8 /* Sources */,
 				CD500C5717BCB4EC004951B8 /* Frameworks */,
 				CD500C5817BCB4EC004951B8 /* Resources */,
+				0E88357AE12349EC8F062B7C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +202,46 @@
 				CD500C7B17BCB4EC004951B8 /* first@2x.png in Resources */,
 				CD500C8017BCB4EC004951B8 /* second.png in Resources */,
 				CD500C8217BCB4EC004951B8 /* second@2x.png in Resources */,
-				CD500C8517BCB4EC004951B8 /* FirstViewController.xib in Resources */,
-				CD500C8817BCB4EC004951B8 /* SecondViewController.xib in Resources */,
+				CD500C8517BCB4EC004951B8 /* BarcodeScanViewController.xib in Resources */,
+				CD500C8817BCB4EC004951B8 /* MyClothesViewController.xib in Resources */,
+				CD500C9217BCBE94004951B8 /* EmbedReaderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E88357AE12349EC8F062B7C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB8EDEB49684DFAA7055836 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD500C5617BCB4EC004951B8 /* Sources */ = {
@@ -200,8 +250,9 @@
 			files = (
 				CD500C6A17BCB4EC004951B8 /* main.m in Sources */,
 				CD500C6E17BCB4EC004951B8 /* AppDelegate.m in Sources */,
-				CD500C7717BCB4EC004951B8 /* FirstViewController.m in Sources */,
-				CD500C7E17BCB4EC004951B8 /* SecondViewController.m in Sources */,
+				CD500C7717BCB4EC004951B8 /* BarcodeScanViewController.m in Sources */,
+				CD500C7E17BCB4EC004951B8 /* MyClothesViewController.m in Sources */,
+				CD500C9117BCBE94004951B8 /* EmbedReaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,20 +267,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CD500C8317BCB4EC004951B8 /* FirstViewController.xib */ = {
+		CD500C8317BCB4EC004951B8 /* BarcodeScanViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CD500C8417BCB4EC004951B8 /* en */,
 			);
-			name = FirstViewController.xib;
+			name = BarcodeScanViewController.xib;
 			sourceTree = "<group>";
 		};
-		CD500C8617BCB4EC004951B8 /* SecondViewController.xib */ = {
+		CD500C8617BCB4EC004951B8 /* MyClothesViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CD500C8717BCB4EC004951B8 /* en */,
 			);
-			name = SecondViewController.xib;
+			name = MyClothesViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,6 +344,7 @@
 		};
 		CD500C8C17BCB4EC004951B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1987C097B046AC8DCE361C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iClothes/iClothes-Prefix.pch";
@@ -304,6 +356,7 @@
 		};
 		CD500C8D17BCB4EC004951B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1987C097B046AC8DCE361C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iClothes/iClothes-Prefix.pch";
@@ -332,6 +385,7 @@
 				CD500C8D17BCB4EC004951B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
