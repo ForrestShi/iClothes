@@ -1,0 +1,6 @@
+[submodule "MyPod"]
+	path = MyPod
+	url = git@github.com:ForrestShi/Podfile.git
+[submodule "Resources"]
+	path = Resources
+	url = git@github.com:ForrestShi/Resources.git

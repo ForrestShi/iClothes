@@ -10,4 +10,11 @@
 
 @interface MyClothesViewController : UIViewController
 
+
+- (IBAction)onQueryScan:(id)sender;
+- (IBAction)importBarcode:(id)sender;
+
+- (IBAction)login:(id)sender;
+
+
 @end

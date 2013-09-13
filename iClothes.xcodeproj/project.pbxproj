@@ -27,6 +27,7 @@
 		CD500C8817BCB4EC004951B8 /* MyClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C8617BCB4EC004951B8 /* MyClothesViewController.xib */; };
 		CD500C9117BCBE94004951B8 /* EmbedReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD500C8F17BCBE94004951B8 /* EmbedReaderViewController.m */; };
 		CD500C9217BCBE94004951B8 /* EmbedReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD500C9017BCBE94004951B8 /* EmbedReaderViewController.xib */; };
+		CDEC578917E30079001B08BE /* MyHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC578817E30079001B08BE /* MyHTTPClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		CD500C8E17BCBE94004951B8 /* EmbedReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbedReaderViewController.h; sourceTree = "<group>"; };
 		CD500C8F17BCBE94004951B8 /* EmbedReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbedReaderViewController.m; sourceTree = "<group>"; };
 		CD500C9017BCBE94004951B8 /* EmbedReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmbedReaderViewController.xib; sourceTree = "<group>"; };
+		CDEC578717E30079001B08BE /* MyHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTTPClient.h; sourceTree = "<group>"; };
+		CDEC578817E30079001B08BE /* MyHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				CD500C8317BCB4EC004951B8 /* BarcodeScanViewController.xib */,
 				CD500C8617BCB4EC004951B8 /* MyClothesViewController.xib */,
 				CD500C6417BCB4EC004951B8 /* Supporting Files */,
+				CDEC578717E30079001B08BE /* MyHTTPClient.h */,
+				CDEC578817E30079001B08BE /* MyHTTPClient.m */,
 			);
 			path = iClothes;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				CD500C6E17BCB4EC004951B8 /* AppDelegate.m in Sources */,
 				CD500C7717BCB4EC004951B8 /* BarcodeScanViewController.m in Sources */,
 				CD500C7E17BCB4EC004951B8 /* MyClothesViewController.m in Sources */,
+				CDEC578917E30079001B08BE /* MyHTTPClient.m in Sources */,
 				CD500C9117BCBE94004951B8 /* EmbedReaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +355,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iClothes/iClothes-Prefix.pch";
 				INFOPLIST_FILE = "iClothes/iClothes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -361,6 +368,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iClothes/iClothes-Prefix.pch";
 				INFOPLIST_FILE = "iClothes/iClothes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
